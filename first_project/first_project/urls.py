@@ -18,10 +18,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from home.views import *
+from second_app.views import *
+from third_app.views import *
 urlpatterns = [
 
     path('',home,name = "home"),
     path("admin/", admin.site.urls),
-    path("test/",test,name='test')
+    path("test/",test,name='test'),
+    path("basic/",basic,name='basic'),
+    path("second",second,name='second'),
+    path("third",third,name='third')
 ]
 
