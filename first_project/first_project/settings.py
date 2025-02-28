@@ -29,7 +29,8 @@ INSTALLED_APPS = [
     "home",
     "accounts",
     "second_app",
-    "third_app"
+    "third_app",
+    "django_temp"
 ]
 
 MIDDLEWARE = [

@@ -20,6 +20,7 @@ from django.urls import path
 from home.views import *
 from second_app.views import *
 from third_app.views import *
+from django_temp.views import *
 urlpatterns = [
 
     path('',home,name = "home"),
@@ -27,6 +28,7 @@ urlpatterns = [
     path("test/",test,name='test'),
     path("basic/",basic,name='basic'),
     path("second",second,name='second'),
-    path("third",third,name='third')
+    path("third",third,name='third'),
+    path("templates",templates,name='templates')
 ]
 
