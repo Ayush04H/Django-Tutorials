@@ -32,4 +32,10 @@ def templates(request):
     {'name': 'Shakuni', 'age': 50},
     {'name': 'Kunti', 'age': 55},
     ]
-    return render(request,"django_temp/index.html",context= {'peoples':peoples})
+
+
+
+    text = "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum, ullam rem iure saepe consequuntur autem earum error non a repellat culpa harum cumque, et magni itaque pariatur vero aperiam facilis."
+
+
+    return render(request,"django_temp/index.html",context= {'peoples':peoples , 'text':text})
